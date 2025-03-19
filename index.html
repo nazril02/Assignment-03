@@ -20,6 +20,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+           'btn-primary' :  #FFDC26,
           }
         }
       }
@@ -30,6 +31,9 @@
 
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 <style> 
     .adlam-display-font{
         font-family: "ADLaM Display", system-ui;
@@ -41,8 +45,36 @@
 </style>
 </head>
 <body>
-    <header > 
+    <header class=" "> 
+<nav  class="sora-font"> 
+    <div class="navbar bg-red-50 shadow-sm">
+        <div class="navbar-start ml-6">
+          <img class="h-10" src="./c1-assets/logo-header.png" alt=""  >
+          <h1 class="btn btn-ghost hidden lg:flex "> Browse<span class="text-yellow-500">4</span>pets</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+           
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds </a></li>
+            <li><a> Contact us</a></li>
+            
+          </ul>
+        </div>
+        <div class="navbar-end pr-5 lg:space-x-3 hidden lg:flex">
+          
+      
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+             <button class="btn btn-soft btn-warning text-black"> login</button>
+           
+          <a class="btn btn-warning">Button</a> 
+       
+         </div>
+         <div class=" block   lg:hidden "> <i class="fa-solid fa-bars pl-50 text-2xl"></i> </div>
 
+      </div>
+</nav>
     </header>
     <main  > 
         
